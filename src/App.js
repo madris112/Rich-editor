@@ -29,10 +29,6 @@ function App() {
       children: [{ text: 'A line of text in a paragraph.' }],
     },
   ])
-  const [editorvalue, editorValue] = useState(value)
-  
-
-  const input = useRef(null);
 
   //function to handle emphasis button click
   function handleemphasisClick ()  {
@@ -110,9 +106,6 @@ function App() {
           >
           <Editable 
           className  = "slate"
-          value      = {editorvalue}
-          onChange   = {val => editorValue(val)}
-          ref        = {input}
           renderLeaf = {renderLeaf}
           onKeyDown  = {(event,change)=>{
              console.log(editor);
