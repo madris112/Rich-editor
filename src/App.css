@@ -1,0 +1,141 @@
+.App {
+  display:flex;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.inside-emphasis {
+  border-radius: 30px 30px 30px 30px;
+  padding: 5px;
+  background-color:purple;
+  color:white;
+  border: 0px;
+  display:inline-block;
+}
+
+.cross-button {
+  margin-left:5px;
+  color:black;
+  display: none;
+}
+
+.inside-emphasis:hover .cross-button {
+  margin-left:5px;
+  color:black;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.inside-fast:hover .cross-button {
+  margin-left:5px;
+  color:black;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.inside-slow:hover .cross-button {
+  margin-left:5px;
+  color:black;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.inside-fast {
+  border-radius: 30px 30px 30px 30px;
+  padding: 5px;
+  background-color:blue;
+  color:white;
+  border:0px;
+}
+
+.inside-slow {
+  border-radius: 30px 30px 30px 30px;
+  padding: 5px;
+  background-color:green;
+  color:white;
+  border: 0px;
+}
+
+.ssml-button{
+  border-radius: 30px 30px 30px 30px;
+  border: 2px dashed;
+  background-color:transparent;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.slate{
+  border: 3px solid grey;
+  margin-top: 3%;
+  padding:20px;
+  width: 90%;
+  height:70%;
+  border-radius: 20px 20px 20px 20px;
+  font-size:20px;
+  line-height: 36px;
+}
+
+.emphasis{
+  color:purple;
+}
+
+.fast{
+  color:blue;
+}
+
+.slow{
+  color:green;
+}
+
+.row {
+  height: 100%;
+}
+
+.left-div {
+  height:25%;
+  text-align:center;
+  padding-top:20%;
+}
+
+.left-side {
+  height:100%;
+  border-right:2px solid black;
+}
+
+.right-side{
+  height:100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
